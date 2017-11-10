@@ -1,0 +1,200 @@
+body{
+	background-color:#f0f5f5;
+}
+nav{
+	background-color:rgb(30,65,93);
+}
+#message{
+font-size:30px;
+}
+li.navbar-brand{
+	color:#99c2ff !important;
+	font-family:'Times New Roman' !important;
+	font-style: italic !important;
+	font-size: 40px !important;
+}
+a:hover{
+	color:#99c2ff !important;
+}
+img{
+	width: 60px;
+	height: 60px;
+}
+img.dd{
+	width: 43px;
+	height: 43px;
+}
+img.yy{
+	width: 40px;
+	height: 40px;
+}
+img.ll{
+	width: 46px;
+	height: 46px;
+}
+img.ya{
+	width: 44px;
+	height: 44px;
+}
+img.pp{
+	width: 47px;
+	height: 47px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 20%;
+      margin: auto;
+}
+a{
+	font-size: 17px;
+	color:blue;
+}
+.panel-heading{
+	font-size: 30px;
+	font-family:'Times New Roman' !important;
+	font-style: italic !important;
+}
+.panel-body{
+	font-size: 18px;
+	font-family:'Times New Roman' !important;
+	font-style: italic !important;
+}
+h1,h3{
+	font-family:'Times New Roman' !important;
+	font-style: italic;
+	color : rgb(30,65,93);
+}
+h1{
+	font-size: 60px;
+}
+h3{
+	font-size: 30px;
+}
+button{
+	width: 200px;
+	height: 50px;
+	text-transform: capitalize !important;
+	color: white !important;
+	font-family:'Times New Roman' !important;
+	font-style: italic bold !important;
+	font-size: 20px !important;
+}
+#mode,#median,#standard,#range,#covariance,#hamming,#correlation,#cosine,#jaccard{
+	display: none;
+}
+
+button#calcbut1{
+    margin-left:500px;    
+}
+button#calcbut2{
+    margin-left:500px;    
+}
+button#calcbut3{
+    margin-left:473px;    
+}
+button#calcbut4{
+    margin-left:485px;    
+}
+button#calcbut5{
+    margin-left:300px;    
+}
+button#calcbut6{
+    margin-left:400px;    
+}
+button#calcbut7{
+    margin-left:300px;    
+}
+button#calcbut8{
+    margin-left:410px;    
+}
+button#calcbut9{
+    margin-left:350px;    
+}
+button#calcbut10{
+    margin-left:350px;    
+}
+button#enter{
+    width:100px; 
+    
+}
+button#clearbutt{
+      margin-left:700px;
+      width:100px;
+      margin-top:-136px;
+    
+    
+}
+.op{
+    border: 5px solid rgb(30,65,93);
+    border-radius: 12px;
+}
+.input,.output{
+	font-size: 35px;
+	font-family:'Times New Roman' !important;
+	font-style: italic;
+	padding: 25px;
+	text-transform: capitalize !important;
+
+}
+.output{
+	padding-top: 10px !important;
+	padding-bottom: 25px !important;
+
+}
+input{
+	width: 70% !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 10px !important;
+    font-size: 25px !important;
+    resize: none !important;
+    height: 50px !important;
+}
+
+.abouts{
+    width:1330px;
+    height:400px;
+    margin-left:10px;
+    
+}
+
+.aboutus{
+    width:;
+    height:800;
+    padding-left:40px;
+    font-size: 25px;
+}
+.aboutus1{
+    margin-left: 450px;
+    font-size:30px;
+    font-weight: bold;
+}
+.contactus{
+    padding:40px
+    
+}
+.contactusform{
+    font-size:25px; 
+    margin-left:40px; 
+}
+
+.contactusheader{
+    
+    margin-left:450px; 
+}
+.contacttextarea{
+    border-radius:20px;
+    width:500px;
+    height: 300px;
+    padding:20px;
+    
+    
+}
+.contphone{
+    width:300px; 
+    
+}
+#contactconf{
+    margin-left: 700px;
+    
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Task 1</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="samar ibrahim ali">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link rel="stylesheet" id="camera-css"  href="css/camera.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
+<link rel="stylesheet" href="css/booo.css" />
+<link rel="stylesheet" type="text/css" href="js/bootstrap1.js">
+<script src="js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<script src="js/myjquery.js"></script>
+</head>
+<body>
+<!--start nav-->
+<nav class="navbar navbar-defult">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="navbar-brand" style="color:#f0f5f5;">Statistical</li>
+        <li><a href="index.html" style="font-size:22px ;color:#f0f5f5;">Home</a></li>
+        <li><a href="operation.html" style="font-size:18px ;color:#f0f5f5;">Opration</a></li>
+        <li><a href="about.html" style="font-size:18px ;color:#f0f5f5;">About</a></li>
+        <li><a href="contact.html" style="font-size:18px ;color:#f0f5f5;">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#"  style="font-size:18px ;color:#f0f5f5;"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+        <li><a href="#"  style="font-size:18px ;color:#f0f5f5;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--end nav-->
+ <div class="container">
+<div style="float: left; width: 80%;">
+                            <!--mean code-->    
+<div id="mean">
+  <div class="def"><h1>Mean</h1><h3>is the average of the numbers: a calculated "central" value of a set of numbers. 
+To calculate: Just add up all the numbers, then divide by how many numbers there are.</h3><br><br></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list elements:<br><input type="text" name="mean" id="meaninputfield">   
+    <br><span id="vetorcontent"></span></div>
+<button class="btn btn-primary" class="calculate" onclick="clearmeanarr()" id="clearbutt" >clear</button>
+  <div class="output">Mean = <span id="meanoutput"></span>     
+<button class="btn btn-primary" class="calculate" onclick="meancalc()" id="calcbut1" >Calculate</button> 
+    </div>
+ 
+</div>
+</div>
+                         <!--mode code-->
+
+<div id="mode">
+  <div class="def"><h1>Mode</h1><h3>The number which appears most often in a set of numbers. 
+Example: in {6, 3, 9, 6, 6, 5, 9, 3} the Mode is 6 (it occurs most often).</h3><br><br></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list elements:<input type="text" name="mod" id="modinputfield">
+      <br><span id="vetor2content"></span>   </div>
+ <button class="btn btn-primary" class="calculate" onclick="clearmodarr()" id="clearbutt" >clear</button>
+  <div class="output">Mode = <span id="modoutput"> </span> 
+    <button class="btn btn-primary" class="calculate" id="calcbut2" onclick="modcalc()">calculate</button></div>
+</div>
+</div>
+
+      <!--median code-->
+
+<div id="median">
+  <div class="def"><h1>Median</h1><h3>The middle number (in a sorted list of numbers). To find the Median, place the numbers you are given in value order and find the middle number.</h3><br><br></div>
+  <div class="op" class="form-group">
+  <div class="input">please enter list elements:<input type="text" name="median" id="medinputfield">
+      <br><span id="vetor3content"></span> 
+  </div>
+<button class="btn btn-primary" class="calculate" onclick="clearmedarr()" id="clearbutt" >clear</button>  
+  <div class="output">Median = <span id="medoutput"> </span> 
+<button class="btn btn-primary" class="calculate" id="calcbut3" onclick="mediancalc()">calculate</button>  
+      </div>
+</div>
+</div>
+    
+     <!--range code-->   
+<div id="range">
+  <div class="def"><h1>Range</h1><h3>
+The difference between the lowest and highest values. For example, the "range" of [3, 5, 4, 4, 1, 1, 2, 3] is [1, 5]. <br><br></h3></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list elements:<input type="text" name="range" id="ranginputfield">
+<br><span id="vetor4content"></span>       
+  </div>
+<button class="btn btn-primary" class="calculate" onclick="clearrangarr()" id="clearbutt" >clear</button>  
+    <div class="output">Range = <span id="rangoutput"> </span> 
+    <button class="btn btn-primary" class="calculate" id="calcbut4" onclick="rangcalc()">calculate</button>  
+    </div>
+</div>
+</div>
+    
+    
+    <!--standard deviation code-->
+    
+<div id="standard">
+  <div class="def"><h1>Standard deviation</h1><h3>The Standard Deviation is a measure of how spread out numbers are. Its symbol is σ (the greek letter sigma).
+it is the square root of the Variance.<br><br></h3></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list elements:<input type="text" name="std" id="stdinputfield">
+  <br><span id="vetor5content"></span> 
+    </div>
+<button class="btn btn-primary" class="calculate" onclick="clearstdarr()" id="clearbutt" >clear</button>    
+ <div class="output">Standard Deviation =<span id="stdandoutput"></span> 
+<button class="btn btn-primary" class="calculate" id="calcbut5" onclick="stdandcalc()">calculate</button>
+    </div>
+</div>
+</div>
+    
+      <!--covariance-->
+    
+<div id="covariance">
+  <div class="def"><h1>Covariance</h1><h3>is a measure of the joint variability of two random variables. 
+If the greater values of one variable mainly correspond with the greater values of the other variable, and the same holds for the lesser values.<br><br></h3></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list1 elements:<input type="text" name="cov" id="covarr1inputfield">
+   <br><span id="vetor6content"></span> 
+      <br>
+    please enter list2 elements:<input type="text" name="cov" id="covarr2inputfield">  
+<br><span id="vetor7content"></span> 
+    </div>  
+    <button class="btn btn-primary" class="calculate" onclick="clearcovarr()" id="clearbutt" >clear</button>  
+  <div class="output">Covariance = <span id="covoutput"></span>
+  <button class="btn btn-primary" class="calculate" id="calcbut6" onclick="covcalc()">calculate</button> 
+    </div>
+</div>
+</div>
+    
+  <!--haming distance-->
+<div id="hamming">
+  <div class="def"><h1>Hamming distance</h1><h3>The number of digit positions in which the corresponding digits of two binary words of the same length are different.<br><br>
+</h3></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list1 elements:<input type="text" name="hamm" id="hamarr1inputfield">
+<br><span id="vetor8content"></span>  
+      <br>
+    please enter list2 elements:<input type="text" name="hamm" id="hamarr2inputfield">
+  <br><span id="vetor9content"></span> 
+    </div>
+      <button class="btn btn-primary" class="calculate" onclick="clearhamarr()" id="clearbutt" >clear</button>  
+  
+    <div class="output">Hamming Distance = <span id="hamoutput"></span>
+<button class="btn btn-primary" class="calculate" id="calcbut7" onclick=" hamingcalc()">calculate</button> 
+    </div>
+</div>
+</div>
+    
+    <!--correlation-->
+<div id="correlation">
+  <div class="def"><h1>Correlation</h1><h3>The word Correlation is made of Co-(meaning"together"),and Relation.
+is Positive when the values increase together
+is Negative when one value decreases as the other increases.<br><br></h3></div>
+<div class="op" class="form-group">
+  <div class="input">please enter list1 elements:<input type="text" name="corrl" id="corrarr1inputfield">
+      <br><span id="v10content"></span> 
+      <br>
+    please enter list2 elements:<input type="text" name="corrl" id="corrarr2inputfield">
+<br><span id="v11content"></span> 
+    </div>
+     <button class="btn btn-primary" class="calculate" onclick="clearcorrarr()" id="clearbutt" >clear</button>  
+  <div class="output">Correlation = <span id="corroutput"> </span>
+<button class="btn btn-primary" class="calculate" id="calcbut8" onclick="corelationcalc()">calculate</button>     
+    </div>
+</div>
+</div>
+    
+    <!--cosine distance-->
+<div id="cosine">
+  <div class="def"><h1>Cosine distance</h1><h3>is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. The cosine of 0° is 1, and it is less than 1 for any other angle.<br><br></h3></div>
+  <div class="op" class="form-group">
+  <div class="input">please enter list1 elements:<input type="text" name="cos" id="cosdarr1inputfield">
+ <br><span id="vector12content"></span> 
+      <br>
+    please enter list2 elements:<input type="text" name="cos" id="cosdarr2inputfield" >
+   <br><span id="vector13content"></span> 
+      </div>
+ <button class="btn btn-primary" class="calculate" onclick="clearcosdarr()" id="clearbutt" >clear</button>      
+  <div class="output">Cosine Distance = <span id="cosdoutput"></span>
+    <button class="btn btn-primary" class="calculate" id="calcbut9" onclick="cosdcalc()">calculate</button>   
+      </div>
+  </div>
+</div>
+    
+    <!--jaccard-->
+<div id="jaccard">
+  <div class="def"><h1>Jaccard distance</h1> <h3>(1- Jaccard similarity)</h3>
+  <h3>Jaccard Similarity is a statistic used for comparing the similarity and diversity of sample sets.<br><br> </h3>
+  </div>
+  <div class="op" class="form-group">
+  <div class="input">please enter list1 elements:<input type="text" name="jac" id="jacarr1inputfield">
+  <br><span id="vector14content"></span> 
+      <br>
+    please enter list2 elements:<input type="text" name="jac" id="jacarr2inputfield">
+    <br><span id="vector15content"></span> 
+      </div>
+<button class="btn btn-primary" class="calculate" onclick="clearjacarr()" id="clearbutt" >clear</button>            
+  <div class="output">Jacard Distance = <span id="jacoutput"></span> 
+      <button class="btn btn-primary" class="calculate" id="calcbut10" onclick="jaccardcalc()">calculate</button>
+      </div>
+</div>
+</div>
+</div>
+<div style="float: right;">
+  <button class="btn btn-primary" id="me">Mean</button><br><br>
+  <button class="btn btn-primary" id="mo">Mode</button><br><br>
+  <button class="btn btn-primary" id="med">Median</button><br><br>
+  <button class="btn btn-primary" id="r">Range</button><br><br>
+  <button class="btn btn-primary" id="st">Standard deviation</button><br><br>
+  <button class="btn btn-primary" id="co">Covariance</button><br><br>
+  <button class="btn btn-primary" id="h">Hamming distance</button><br><br>
+  <button class="btn btn-primary" id="cor">Correlation</button><br><br>
+  <button class="btn btn-primary" id="cos">Cosine distance</button><br><br>
+  <button class="btn btn-primary" id="j">Jaccard distance</button><br><br>
+</div>
+</div>
+
+<div class="footer_bottom" style="background-color:rgb(30,65,93) ;">
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="span5" style="float: left">    
+                    <div class="copyright" style="font-size: 18px;color:#f0f5f5;">Copyright © 2017 statistical website.All Rights Reserved.
+                    </div>
+                    </div>
+                    <div style="float: right">
+                <h1>
+                <a href="#"><img src="img/fb.gif"></a>
+                <a href="#"><img src="img/tw.png"></a>
+                <a href="#"><img src="img/l.png" class="ll"></a>
+                <a href="#"><img src="img/ya.png" class="ya"></a>
+                <a href="#"><img src="img/youtube.png" class="yy"></a>
+                <a href="#"><img src="img/g+.png" class="dd"></a>
+                <a href="#"><img src="img/p.png" class="pp"></a>
+                </h1>
+               </div>
+               </div>
+               <div class="foot_menu" style="float: right;">
+
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li style="color:#f0f5f5">|</li>
+                        <li><a href="operation.html">Operation</a></li>
+                        <li style="color:#f0f5f5">|</li>
+                        <li><a href="#">About</a></li>
+                        <li style="color:#f0f5f5">|</li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>                            
+        </div>
+    </div>
+   <script src="js/functions.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){ 
+      //Slider
+      $('#camera_wrap_1').camera();
+      
+      //Featured works & latest posts
+      $('#mycarousel, #mycarousel2, #newscarousel').jcarousel();                          
+    });   
+  </script>
+  <script src="js/jquery-3.1.1.js"></script>
+</body>
+</html>
